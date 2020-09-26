@@ -1,0 +1,231 @@
+@media (max-width: 600px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .App{
+    background-image: url(./img/cold.png);
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4s ease;
+  }
+  
+  .App.warm{
+    background-image: url(./img/warm.jpg);
+  }
+  
+  main{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.5));
+    padding: 25px;
+  } 
+  
+  .search-box{
+    width: 100%;
+    margin: 0 0 75px;
+  }
+  ::placeholder {
+    color: rgb(32, 30, 26);
+    text-transform: capitalize;
+  }
+  input:focus::-webkit-input-placeholder {
+    color: rgb(19, 27, 39);
+    transition: 0.4s ease;
+}
+  .search-box .search-bar{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: -1.6rem;
+    background: none;
+    border-radius: 18px ;
+    border: none;
+    outline: none;
+    background-color: rgba(248, 248, 248, 0.37);
+    appearance: none;
+    box-shadow:  0 5px rgba(0, 0, 0, 0.377);
+    color: rgb(33, 141, 212);
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+    margin: auto;
+  }
+  
+  .search-box .search-bar:focus{
+    background-color: rgba(248, 248, 248, 0.781);
+  }
+  .location-box .location{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.377);
+  }
+  .location-box .date{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.377);
+  }
+  .weather-box{
+    text-align: center;
+  }
+  .weather-box .temp{
+    position: relative;
+    display: inline-block;
+    margin: 5rem auto;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 1.5rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.377);
+  }
+
+  .sunrise,
+  .sunset,
+  .description,
+  .humidity{
+    color: azure;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 200;
+  }
+  .weather{
+    margin-bottom: 2rem;
+  }
+  
+  .description,
+  .humidity{
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  }
+  
+}
+@media(min-width: 599px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .App{
+    background-image: url(./img/desktop-cold.jpg);
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4s ease;
+  }
+  
+  .App.warm{
+    background-image: url(./img/desktop-warm.jpg);
+  }
+  
+  main{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(39, 36, 36, 0.384), rgba(0, 0, 0, 0.5));
+    padding: 25px;
+  } 
+  
+  .search-box{
+    width: 100%;
+    margin: 0 0 75px;
+    
+  }
+  ::placeholder {
+    color: rgb(29, 27, 24);
+    text-transform: capitalize;
+  }
+  input:focus::-webkit-input-placeholder {
+    color: rgb(19, 27, 39);
+    transition: 0.4s ease;
+}
+  
+  .search-box .search-bar{
+    display: block;
+    width: 550px;
+    padding: 1rem;
+    margin-top: -1.6rem;
+    background: none;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(248, 248, 248, 0.37);
+    appearance: none;
+    box-shadow:  0 5px rgba(0, 0, 0, 0.377);
+    color: rgb(33, 141, 212);
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+    margin: auto;
+  }
+  
+  .search-box .search-bar:focus{
+    background-color: rgba(248, 248, 248, 0.781);
+  }
+  .location-box .location{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.377);
+  }
+  .location-box .date{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.377);
+  }
+  .weather-box{
+    text-align: center;
+  }
+  .weather-box .temp{
+    position: relative;
+    display: inline-block;
+    margin: 5rem auto;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 1.5rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.377);
+  }
+  .sunrise,
+  .sunset,
+  .description,
+  .humidity{
+    color: azure;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 200;
+  }
+  .weather{
+    margin-bottom: 2rem;
+  }
+  
+  .description,
+  .humidity{
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  }
+  
+}
